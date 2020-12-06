@@ -80,6 +80,13 @@ body {
           filter: brightness(90%);
 }
 
+.button-noradius {
+  border-radius: 0;
+  outline: none;
+  text-transform: capitalize;
+  padding: 10px;
+}
+
 button {
   border: none;
 }
@@ -485,10 +492,14 @@ button {
 }
 
 #postarea {
-  width: 100%;
+  width: 70%;
   height: 50vh;
   padding: 10px;
-  resize: none;
+}
+
+.postarea ul {
+  margin-left: 20px;
+  padding: 10px;
 }
 
 .postarea-preview {

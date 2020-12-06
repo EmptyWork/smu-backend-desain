@@ -90,9 +90,25 @@
     </div>
     <!-- detail area -->
     <section class="rightside">
+        <span class="info info_warning">
+            <h3 class="info-header info-header_warning">Error</h3>
+            masih dalam tahap pembuatan - implementasi feature masih belum selesai, tampilan masih tahap beta<br/>
+            preview [post area] sudah berfungsi.
+        </span>
         <h1>Post</h1>
-        <textarea name="" id="postarea">[kepala] Testing Area [/kepala] [tebal] [tengah] Lorem ipsum dolor, [/tengah] [/tebal] sit amet consectetur adipisicing elit. Earum nesciunt sunt cumque quae repellat amet laborum id, tempora officiis! Neque repellat quos possimus ducimus velit illo assumenda earum facere accusantium!</textarea>
-        <button class="button" onclick="previewText()">preview</button>
+        <div class="postarea flex">
+            <textarea name="" id="postarea">[kepala] Testing Area [/kepala] [tebal] [tengah] [miring] Lorem ipsum dolor, [miring] [/tengah] [/tebal] sit amet consectetur adipisicing elit. Earum nesciunt sunt cumque quae repellat amet laborum id, tempora officiis! Neque repellat quos possimus ducimus velit illo assumenda earum facere accusantium!</textarea>
+            <div class="postarea-info">
+                <ul> <b>Code Info</b>
+                    <li><b>[kepala][/kepala]</b> - header</li>
+                    <li><b>[tengah][/tengah]</b> - center paragraf</li>
+                    <li><b>[miring][/miring]</b> - italic</li>
+                    <li><b>[tebal][/tebal]</b> - bold text</li>
+                    <li>akan di tambahkan</li>
+                </ul>
+            </div>
+        </div>
+        <button class="button button-noradius" onclick="previewText()">preview</button>
         <div class="postarea-preview"></div>
         <!-- <h1>Dashboard</h1>
         <div class="button">Profile</div>
@@ -105,13 +121,10 @@
         <span class="info info_new">
             <h3 class="info-header">Pengumuman</h3>
             Periode ini merupakan periode...<br/>
-        </span>
-        <span class="info info_warning">
-            <h3 class="info-header info-header_warning">Error</h3>
-            file "../yuns.blade.php" tidak di temukan, tolong hubungi administrator<br/>
         </span> -->
+        
     </section>
-    <div class="buildnumber">beta 0.3.4 - Desember Build</div>
+    <div class="buildnumber">beta 0.3.5 - Desember Build</div>
 </body>
 <!-- bagian tambahan javascript - default load -->
 <script src="../assets/js/script.js"></script>

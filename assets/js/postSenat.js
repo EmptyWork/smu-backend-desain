@@ -14,6 +14,12 @@ function previewText() {
                 case "[/tengah]":
                     iSplit[iNumber] = '</span>';
                     break;
+                case "[miring]":
+                    iSplit[iNumber] = '<i>';
+                    break;
+                case "[/miring]":
+                    iSplit[iNumber] = '</i>';
+                    break;
                 case "[kepala]":
                     iSplit[iNumber] = '<h3 class="post-header">';
                     break;

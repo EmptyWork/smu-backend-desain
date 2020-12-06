@@ -1,5 +1,6 @@
 *.scss
-*.css.map
+
+*Old.*
 
 assets/images/99794.jpg
 assets/images/profile.jpg

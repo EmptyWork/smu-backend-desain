@@ -95,6 +95,7 @@
             masih dalam tahap pembuatan - implementasi feature masih belum selesai, tampilan masih tahap beta<br/>
             preview [post area] sudah berfungsi.
         </span>
+        <input type="date" name="date" id="date">
         <h1>Post</h1>
         <div class="postarea flex">
             <textarea name="" id="postarea">[kepala] Testing Area [/kepala] [tebal] [tengah] [miring] Lorem ipsum dolor, [miring] [/tengah] [/tebal] sit amet consectetur adipisicing elit. Earum nesciunt sunt cumque quae repellat amet laborum id, tempora officiis! Neque repellat quos possimus ducimus velit illo assumenda earum facere accusantium!</textarea>
@@ -108,7 +109,7 @@
                 </ul>
             </div>
         </div>
-        <button class="button button-noradius" onclick="previewText()">preview</button>
+        <button class="button button-noradius" onclick="previewText()">preview</button><button class="button button-noradius" onclick="dateConvert()">Date Convert</button>
         <div class="postarea-preview"></div>
         <!-- <h1>Dashboard</h1>
         <div class="button">Profile</div>
@@ -124,9 +125,14 @@
         </span> -->
         
     </section>
-    <div class="buildnumber">beta 0.3.5 - Desember Build</div>
+    <div class="buildnumber">beta 0.3.6 - Desember Build</div>
 </body>
 <!-- bagian tambahan javascript - default load -->
 <script src="../assets/js/script.js"></script>
 <script src="../assets/js/postSenat.js"></script>
+
+<script>
+    const dateField = document.querySelector('#date');
+    function dateConvert(){console.log(dateField.value.split('-'));}
+</script>
 </html>

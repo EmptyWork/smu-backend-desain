@@ -205,6 +205,11 @@ button {
 
 .sidebar-profile {
   background-color: #000000;
+  background-image: -webkit-gradient(linear, left top, right top, from(#000000), to(transparent)), url("../images/sampul.jpg");
+  background-image: linear-gradient(to right, #000000, transparent), url("../images/sampul.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 200px;
   font-weight: 600;
   padding: 20px 10px;
   padding-bottom: 10px;
@@ -492,9 +497,9 @@ button {
 }
 
 #postarea {
-  width: 70%;
   height: 50vh;
   padding: 10px;
+  width: 70%;
 }
 
 .postarea ul {
@@ -512,23 +517,23 @@ button {
 
 .postarea-preview::after {
   content: "preview";
+  color: #f0f1ff;
+  font-size: 20px;
+  left: 50%;
   position: absolute;
   top: 50%;
-  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 20px;
-  color: #f0f1ff;
 }
 
 .center {
-  text-align: center;
   display: block;
+  text-align: center;
 }
 
 .buildnumber {
-  position: fixed;
   bottom: 10px;
+  position: fixed;
   right: 10px;
 }
 

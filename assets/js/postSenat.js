@@ -1,77 +1,46 @@
 const postarea = document.querySelector('#postarea');
     
 function previewText() {
+    //masih belum secure - will be add soon
     if(postarea) {
         let inputText = postarea.value;
         let iSplit = inputText.split(' ');
-        let iNumber = 0;
-        iSplit.forEach(element => {
-            let iText = element;
-            switch(iText){
-                case "[tengah]":
-                    iSplit[iNumber] = '<span class="center">';
-                    break;
-                case "[/tengah]":
-                    iSplit[iNumber] = '</span>';
-                    break;
-                case "[miring]":
-                    iSplit[iNumber] = '<i>';
-                    break;
-                case "[/miring]":
-                    iSplit[iNumber] = '</i>';
-                    break;
-                case "[kepala]":
-                    iSplit[iNumber] = '<h3 class="post-header">';
-                    break;
-                case "[/kepala]":
-                    iSplit[iNumber] = '</h3>';
-                    break;
-                case "[tebal]":
-                    iSplit[iNumber] = "<b>";
-                    break;
-                case "[/tebal]":
-                    iSplit[iNumber] = "</b>";
-                    break;
-            }
-            iNumber++;
-        });
+        iSplit.forEach(convertCode);
         let preview = document.querySelector('.postarea-preview');
         preview.innerHTML = arrayToString(iSplit);
         console.log(iSplit.toString());
     }
 }
 
-function arrayToString(y) {
-    return y.toString().replace(/,/g, " ");
+function convertCode(item, i, arr) {
+    switch(item) {
+        case "[tengah]":
+            arr[i] = '<span class="center">';
+            break;
+        case "[/tengah]":
+            arr[i] = '</span>';
+            break;
+        case "[miring]":
+            arr[i] = '<i>';
+            break;
+        case "[/miring]":
+            arr[i] = '</i>';
+            break;
+        case "[kepala]":
+            arr[i] = '<h3 class="post-header">';
+            break;
+        case "[/kepala]":
+            arr[i]= '</h3>';
+            break;
+        case "[tebal]":
+            arr[i] = "<b>";
+            break;
+        case "[/tebal]":
+            arr[i] = "</b>";
+            break;
+    }
 }
 
-
-// "use strict";const postarea = document.querySelector('#postarea');function previewText() {if(postarea) {let inputText = postarea.value;let iSplit = inputText.split(' ');let iNumber = 0;iSplit.forEach(element => {let iText = element;switch(iText){case "[tengah]":iSplit[iNumber] = '<span class="center">';break;case "[/tengah]":iSplit[iNumber] = '</span>';break;case "[kepala]":iSplit[iNumber] = '<h3 class="post-header">';break;case "[/kepala]":iSplit[iNumber] = '</h3>';break;case "[tebal]":iSplit[iNumber] = "<b>";break;case "[/tebal]":iSplit[iNumber] = "</b>";break;}iNumber++;});let preview = document.querySelector('.postarea-preview');preview.innerHTML = arrayToString(iSplit);console.log(iSplit.toString());}}function arrayToString(y) {return y.toString().replace(/,/g, " ");}
-
-
-    // if(postarea) {
-    //     postarea.addEventListener('keypress', () => {
-    //         let input = postarea.value;
-    //         let iSplit = input.split(' ');
-    //         let iSplitNum = 0;
-    //         iSplit.forEach((e) => {
-    //             let iText = e;
-    //             iSplitNum++;
-    //             switch(iText){
-    //                 case "[bold]":
-    //                     iSplit[iSplitNum] = "<b>";
-    //                     break;
-    //                 case "[/bold]":
-    //                     iSplit[iSplitNum] = "<b>";
-    //                     break;
-    //             }
-    //             // if(e === "["){
-    //             //     console.log('test' + e);
-    //             // }
-    //         });
-    //         let preview = document.querySelector('.postarea-preview');
-    //         preview.innerHTML = iSplit;
-    //         console.log(iSplit[iSplitNum]);
-    //         console.log(iSplitNum);
-    //     });
-    // }
+function arrayToString(y) {
+    return y.toString().replace(/,(?!,)/g, " ");
+}

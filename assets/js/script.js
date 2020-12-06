@@ -45,7 +45,8 @@
 
     // masih belum bisa untuk "mobile res-support"    
     // Untuk mengukur ketinggian sidebar-menu
-    (function () {
+    // window.addEventListener('resize', 
+    (function sideMenuResize () {
         let heightArr = ['.sidebar-logo','.sidebar-profile','.sidebar-logout', '.sidebar-footer'];
         let sideMenu = document.querySelector('.sidebar-menu');
 

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        SMU UKIM Control Panel Desain
+        Desain dibuat oleh EmptyWork
+        ------ 2020, November 11 ------
+        
+        Desain ini dibuat secara khusus untuk Control Panel SMU UKIM
+        Font di ambil dari Google Font
+        Asset berasal dari Arsip UKIM, EmptyWork Desain, dan lain-lain
+
+        tambahkan /credits pada akhir domain untuk melihat daftar asset.
+        ex. senat.ukim.ac.id/credits
+     -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#16106e" />
+    <meta name="description" content="Website Resmi dari Senat Mahasiswa Universitas Kristen Indonesia Maluku" />
+    <title>SMU UKIM Control Panel</title>
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    <!-- external css untuk fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/images/LogoUkim.png" type="image/x-png">
+</head>
+<body> 
+    <div class="sidebar">
+        <div class="sidebar-logo flex flex-middle flex-fill txt-middle">
+            <div class="sidebar-logo_brand">SMUDashboard</div>
+            <div class="sidebar-logo_desc">Bidang Build</div>
+            <div class="mobile-menu open">
+                <div class="mobile-menu_strip left"></div>
+                <div class="mobile-menu_strip right"></div>
+                <div style="display: none;" class="mobile-menu_strip"></div>
+            </div>
+        </div>
+        <div class="sidebar-profile grid grid-two-right grid-middle">
+            <div class="sidebar-profile_image">
+                <!-- <img src="../assets/images/profile.jpg" alt="${username}'s Profile"> -->
+            </div>
+            <div class="sidebar-profile_name">Beta Build<br/>
+                <small class="sidebar-profile_class">Departement</small>
+                <small class="sidebar-profile_class sidebar-profile_class_member">Staff</small>
+                <small class="sidebar-profile_class sidebar-profile_class_developer">Developer</small>
+            </div>
+        </div>
+        <div class="sidebar-logout txt-middle">
+        <a href="../index.html">
+           <div class="sidebar-logout_button">
+                Logout 
+            </div>
+        </a>  
+        </div>
+        <div class="sidebar-menu">
+            <div class="sidebar-menu-links">
+                Dashboard
+            </div>
+            <div class="sidebar-menu-links_area">
+                <div class="sidebar-menu-links_link">Profile</div>
+                <div class="sidebar-menu-links_link">Work</div>
+                <div class="sidebar-menu-links_link">Post</div>
+            </div>
+            <div class="sidebar-menu-links">
+                Website
+            </div>
+            <div class="sidebar-menu-links_area">
+                <div class="sidebar-menu-links_link">Post</div>
+                <div class="sidebar-menu-links_link">Gallery</div>
+                <div class="sidebar-menu-links_link">Other</div>
+            </div>
+            <div class="sidebar-menu-links">
+                Admin
+            </div>
+            <div class="sidebar-menu-links_area">
+                <div class="sidebar-menu-links_link">Details</div>
+                <div class="sidebar-menu-links_link">Member</div>
+                <div class="sidebar-menu-links_link">Edit</div>
+            </div>
+            <div class="sidebar-menu-links">
+                Social Media
+            </div>
+            <div class="sidebar-menu-links_area">
+                <div class="sidebar-menu-links_link">Twitter</div>
+                <div class="sidebar-menu-links_link">Instagram</div>
+                <div class="sidebar-menu-links_link">Facebook</div>
+            </div>
+        </div>
+        <div class="sidebar-footer txt-middle">&copy; Hak Cipta 2020-2021</div>
+    </div>
+    <!-- detail area -->
+    <section class="rightside">
+        <h1>Post</h1>
+        <textarea name="" id="postarea">[kepala] Testing Area [/kepala] [tebal] [tengah] Lorem ipsum dolor, [/tengah] [/tebal] sit amet consectetur adipisicing elit. Earum nesciunt sunt cumque quae repellat amet laborum id, tempora officiis! Neque repellat quos possimus ducimus velit illo assumenda earum facere accusantium!</textarea>
+        <button class="button" onclick="previewText()">preview</button>
+        <div class="postarea-preview"></div>
+        <!-- <h1>Dashboard</h1>
+        <div class="button">Profile</div>
+        <div class="button">Work</div>
+        <div class="button">Post</div>
+        <span class="info info_blue">
+            <h3 class="info-header">Info Board</h3>
+            Selamat Datang Ke Control Panel Senat Mahasiswa Universitas<br/>
+        </span>
+        <span class="info info_new">
+            <h3 class="info-header">Pengumuman</h3>
+            Periode ini merupakan periode...<br/>
+        </span>
+        <span class="info info_warning">
+            <h3 class="info-header info-header_warning">Error</h3>
+            file "../yuns.blade.php" tidak di temukan, tolong hubungi administrator<br/>
+        </span> -->
+    </section>
+    <div class="buildnumber">beta 0.3.4 - Desember Build</div>
+</body>
+<!-- bagian tambahan javascript - default load -->
+<script src="../assets/js/script.js"></script>
+<script src="../assets/js/postSenat.js"></script>
+</html>

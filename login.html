@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html lang="en">
+        <head>
+            <!-- 
+                SMU UKIM Control Panel Desain
+                Desain dibuat oleh EmptyWork
+                ------ 2020, November 11 ------
+                
+                Desain ini dibuat secara khusus untuk Control Panel SMU UKIM
+                Font di ambil dari Google Font
+                Asset berasal dari Arsip UKIM, EmptyWork Desain, dan lain-lain
+        
+                tambahkan /credits pada akhir domain untuk melihat daftar asset.
+             -->
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <meta name="theme-color" content="#16106e" />
+            <meta name="description" content="Website Resmi dari Senat Mahasiswa Universitas Kristen Indonesia Maluku" />
+            <title>SMU UKIM - Login Area</title>
+            <link rel="stylesheet" href="./assets/styles/main.css">
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+            <link rel="shortcut icon" href="./assets/images/LogoUkim.png" type="image/x-png">
+        </head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-logo flex flex-middle flex-fill txt-middle">
+            <div class="sidebar-logo_brand">SMUDashboard</div>
+            <div class="sidebar-logo_desc">UKIM</div>
+        </div>
+        <div class="login grid grid-middle">
+            <h1 class="login-header">Masuk</h1>
+            <form class="login-form" action="" method="post">
+                <input type="text" placeholder="Username" class="login-input" name="username" id="username">
+                <input type="password" placeholder="Password" class="login-input" name="password" id="password">
+                <div class="login-buttons">
+                    <input type="button" class="login-input login-input_button" value="Login">
+                    <input type="button" class="login-input login-input_button login-input_button_register" value="Register">
+                </div>
+                <div class="tick-choose grid grid-two-right">
+                    <div class="tick-outer">
+                        <div class="tick-inner"></div>
+                    </div>
+                    <div class="tick-name">Remember Me!</div>
+                </div>
+            </form>
+        </div>
+        <div class="login-info">
+            <h2 class="login-info_header">Info <small class="button sidebar-profile_class_admin">New</small></h2>
+            <h3>Pleno SM UKIM</h3>
+            <p class="login-info_desc">Info dari Ketum, besok akan di adakan rapat bersama</p>
+            <h3>Lomba</h3>
+            <p class="login-info_desc">Diadakan lomba desain tampilan brosur dari Senat Mahasiswa UKIM</p>
+            <h3>Media</h3>
+            <p class="login-info_desc">Follow Sosial Media Kita!</p>
+        </div>
+        <div class="sidebar-footer txt-middle">&copy; Hak Cipta 2020-2021</div>
+    </div>
+</body>
+<section class="rightside">
+    <p><a href="./app/index.html" rel="noopener noreferrer"> go to dashboard</a></p>
+</section>
+<script>
+    let tickAreas = document.querySelectorAll('.tick-outer');
+
+    tickAreas.forEach((e) => {
+        let x = e;
+        e.addEventListener('click', (e) => {
+            if(x.classList.contains('clicked')) {
+                x.classList.remove('clicked'); 
+                return;
+            }
+            x.classList.add('clicked');
+        })
+    });
+</script>
+</html>

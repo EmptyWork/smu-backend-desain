@@ -163,6 +163,7 @@ button {
   background-color: #1a1a1a;
   bottom: 0;
   color: #ebebeb;
+  font-size: 1.1rem;
   height: 100%;
   left: 0;
   position: fixed;
@@ -174,7 +175,7 @@ button {
 
 .sidebar-logo {
   background-color: #234dac;
-  min-height: 37px;
+  min-height: 70px;
   padding: 0px 0px 0px 10px;
 }
 
@@ -209,11 +210,12 @@ button {
   background-image: linear-gradient(to right, #000000, transparent), url("../images/sampul.jpg");
   background-position: right;
   background-repeat: no-repeat;
-  background-size: 200px;
+  background-size: 250px;
   font-weight: 600;
   padding: 20px 10px;
   padding-bottom: 10px;
   position: relative;
+  text-align: center;
   width: 100%;
   z-index: 0;
 }
@@ -221,10 +223,10 @@ button {
 .sidebar-profile_image {
   background-color: #234dac;
   border-radius: 50%;
-  border: 1px solid #1a1a1a;
-  height: 50px;
+  height: 100px;
+  margin-bottom: 10px;
   position: relative;
-  width: 50px;
+  width: 100px;
 }
 
 .sidebar-profile_image img {
@@ -236,6 +238,7 @@ button {
 }
 
 .sidebar-profile_name {
+  font-size: 1.4rem;
   padding-left: 10px;
   width: 100%;
 }
@@ -249,11 +252,12 @@ button {
 }
 
 .sidebar-profile_class {
-  cursor: default;
   background-color: #234dac;
   border-radius: 3px;
   color: #ebebeb;
+  cursor: default;
   display: inline-block;
+  font-size: 0.9rem;
   margin-top: 2px;
   padding: 2px 5px;
   text-transform: capitalize;
@@ -280,9 +284,9 @@ button {
 }
 
 .sidebar-menu {
+  font-weight: 600;
   height: calc(100% - 195px);
   overflow-y: auto;
-  text-align: center;
   width: 100%;
 }
 
@@ -304,7 +308,7 @@ button {
 
 .sidebar-menu-links, .sidebar-menu-links_link, .sidebar-menu-link {
   cursor: pointer;
-  padding: 10px 0;
+  padding: 20px 0 20px 20px;
   width: 100%;
 }
 
@@ -312,8 +316,8 @@ button {
   z-index: 2;
 }
 
-.sidebar-menu-links-link {
-  padding: 10px;
+.sidebar-menu-links_link {
+  padding: 20px 0 20px 40px;
 }
 
 .sidebar-menu-links + .sidebar-menu-links_area {

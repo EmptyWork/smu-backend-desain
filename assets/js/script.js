@@ -45,8 +45,8 @@
 
     // masih belum bisa untuk "mobile res-support"    
     // Untuk mengukur ketinggian sidebar-menu
-    // window.addEventListener('resize', 
-    (function sideMenuResize () {
+    window.addEventListener('resize', sideMenuResize);
+    function sideMenuResize () {
         let heightArr = ['.sidebar-logo','.sidebar-profile','.sidebar-logout', '.sidebar-footer'];
         let sideMenu = document.querySelector('.sidebar-menu');
 
@@ -62,4 +62,5 @@
         };
 
         sideMenu.style.height = "calc(100% - " + heightSize + "px)";
-    })();
+    };
+    (sideMenuResize)();
